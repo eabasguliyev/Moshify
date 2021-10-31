@@ -1,0 +1,3 @@
+Front development approachs:
+    1) BOTTOM UP - Components first (best)
+    2) TOP DOWN  - Page first
