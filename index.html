@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Moshify - Go Online for Just $9</title>
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds"
+    />
+    <meta property="og:title" content="Moshify - Go Online for Just $9" />
+    <meta
+      property="og:description"
+      content="Deploy your websites in less than 60 seconds"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://image.url" />
+    <meta property="og:url" content="http://moshify.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +25,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -34,13 +47,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 data-aos="fade-right" class="block__heading">
+            Cloud Hosting for Pros
+          </h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x"
@@ -53,7 +68,7 @@
         </picture>
       </div>
     </section>
-    <section class="block container block-domain">
+    <section data-aos="fade-up" class="block container block-domain">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -82,7 +97,7 @@
         <li>.xyz $10</li>
       </ul>
     </section>
-    <section class="block container block-plans">
+    <section data-aos="fade-up" class="block container block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -155,7 +170,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="./images/sprite.svg#easy"></use>
@@ -168,7 +183,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             srcset="./images/easy.webp 1x, ./images/easy@2x.webp 2x"
             type="image/webp"
@@ -264,7 +279,7 @@
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture data-aos="fade-right" class="block-showcase__image">
           <source
             srcset="./images/ipad.webp 1x, ./images/ipad@2x.webp 2x"
             type="image/webp"
@@ -275,7 +290,7 @@
           />
           <img src="./images/ipad@2x.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -330,7 +345,7 @@
         </ul>
       </div>
     </section>
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -392,12 +407,12 @@
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Products</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="./images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
@@ -407,12 +422,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="./images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -422,12 +437,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="./images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -437,12 +452,12 @@
           </div>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Domains</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="./images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
@@ -451,13 +466,17 @@
             </ul>
           </div>
         </section>
-        <section class="footer__brand">
+        <div class="footer__brand">
           <img src="./images/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2020 Mosh Hamedani</p>
-        </section>
+        </div>
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
