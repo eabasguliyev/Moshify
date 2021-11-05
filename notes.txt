@@ -1,3 +1,13 @@
 Front development approachs:
     1) BOTTOM UP - Components first (best)
     2) TOP DOWN  - Page first
+
+Building for Production:
+    Combine CSS and JS files
+    Minify JS/CSS files
+    Optimize images
+
+Build tools:
+    Webpack
+    Rollup
+    Parcel
